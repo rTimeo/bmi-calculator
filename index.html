@@ -4,17 +4,39 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600&family=Raleway:wght@400;600&display=swap" rel="stylesheet">
     <title>Calculer IMC</title>
+    <link rel="stylesheet" href="style.css">
     <script src="app.js" defer></script>
 </head>
 <body>
-    <form class="a">
-        <input id="poids" type="text" placeholder="poids (kg)">
-        <input id="tailles" type="text" placeholder="Taille (cm)">
-        <input id="submit" type="submit">
-    </form>
-    <div>
-        
-    </div>
+    <header>
+        <form>
+            <input id="poids" type="text" placeholder="poids (kg)" required>
+            <input id="tailles" type="text" placeholder="Taille (cm)" required>
+            <input id="submit" type="submit" value="Calculer">
+        </form>
+
+        <div class="container-resultat">
+            <p> </p>
+            <nav>
+                <ul>
+                    <li><span>Indice de masse corporelle (IMC)</span>  <span>Interprétation (d'après l'OMS)</span>	</li>
+                    <li class="a"><span>moins de 18,5</span> <span>Insuffisance pondérale (maigreur)</span></li>
+                    <li class="b"><span>18,5 à 25</span> <span>Corpulence normale</span>  </li>
+                    <li class="c"><span>25 à 30</span> <span>Surpoids</span>  </li>
+                    <li class="d"><span>30 à 35</span> <span>Obésité modérée</span> </li>
+                    <li class="e"><span>35 à 40</span> <span>Obésité sévère</span>  </li>
+                    <li class="f"><span>plus de 40</span> <span>Obésité morbide ou massive</span> </li>
+                </ul>
+            </nav>
+
+        </div>
+    </header>
+
+    
+
 </body>
 </html>
